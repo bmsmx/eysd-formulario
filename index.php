@@ -10,7 +10,7 @@ add_shortcode('eysd-form1','eysd-form1');
 function eysd-form1()
 {
     ob_start();
-}
+
 ?>
 <form action="<?php get_the_permalink(); ?>" method="post" id="form_aspirante
 class="cuestionario"">
@@ -62,7 +62,7 @@ value="1" required> Entiendo y acepto las condiciones
             <input type="submit" value="Enviar">
         </div>
     </form>
-
+}
 <?php
 return ob_get_clean();
 ?>
