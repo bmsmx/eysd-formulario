@@ -12,6 +12,7 @@ function eysd_form1()
     ob_start();
 
 ?>
+<LINK REL=StyleSheet HREF="style.css" TYPE="text/css" MEDIA=screen>
 <form action="<?php get_the_permalink(); ?>" method="post" id="form_aspirante
 class="cuestionario"">
         <div class="form-input">
