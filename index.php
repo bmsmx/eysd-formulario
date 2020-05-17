@@ -12,7 +12,37 @@ function eysd_form1()
     ob_start();
 
 ?>
-<LINK REL=StyleSheet HREF="style.css" TYPE="text/css" MEDIA=screen>
+<style>
+form.cuestionario {
+    width: 600px;
+}
+form.cuestionario label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+form.cuestionario .form-input {
+    padding: 1em;
+}
+form.cuestionario .form-input input[type='text'],
+form.cuestionario .form-input input[type='email'] {
+    display: block;
+    width: 100%;
+}
+p.exito {
+    font-size: 1.5em;
+    padding: 1em;
+    border: 2px solid green;
+    background: lightgreen;
+}
+p.error {
+    font-size: 1.5em;
+    padding: 1em;
+    border: 2px solid red;
+    background: #ff8787;
+}
+
+</style>
 <form action="<?php get_the_permalink(); ?>" method="post" id="form_aspirante
 class="cuestionario"">
         <div class="form-input">
