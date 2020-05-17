@@ -6,8 +6,8 @@
  * Version: 1.0
  */
 // Define el shortcode que muestra el formulario
-add_shortcode('eysd-form1','eysd-form1');
-function eysd-form1()
+add_shortcode('eysd_form1','eysd_form1');
+function eysd_form1()
 {
     ob_start();
 
@@ -62,7 +62,7 @@ value="1" required> Entiendo y acepto las condiciones
             <input type="submit" value="Enviar">
         </div>
     </form>
-    
+
 
 <?php
 return ob_get_clean();
