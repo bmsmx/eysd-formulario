@@ -8,10 +8,11 @@
 // Define el shortcode que muestra el formulario
 add_shortcode('eysd_form1','eysd_form1');
 
-wp_enqueue_style('css_aspirante', plugins_url('style.css', __FILE__));
-    ob_start();
-    
 
+    function Kfp_Aspirante_form() 
+{
+    wp_enqueue_style('css_aspirante', plugins_url('style.css', __FILE__));
+    ob_start();
 ?>
 
 <form action="<?php get_the_permalink(); ?>" method="post" id="form1" class="cuestionario">
