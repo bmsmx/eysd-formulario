@@ -9,6 +9,7 @@
 add_shortcode('eysd_form1','eysd_form1');
 
 function mi_css_personalizado(){
+    ob_start();
         wp_enqueue_style('mi-css', plugins_url('/style.css', __FILE__), array(), '1.0.0');
     }
     add_action('wp_enqueue_style', 'mi_css_personalizado');
@@ -16,7 +17,7 @@ function eysd_form1()
 {
    // wp_register_style('css_aspirante', plugins_url('/style.css', __FILE__));
    // wp_enqueue_style('css_aspirante');
-    ob_start();
+    
 
 ?>
 
