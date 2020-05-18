@@ -12,7 +12,7 @@ function mi_css_personalizado(){
         wp_register_style('mi-css', plugins_url('/style.css', __FILE__));
         wp_enqueue_style('mi-css', plugins_url('/style.css', __FILE__), array(), '1.0.0');
     }
-    add_action('wp_enqueue_scripts', 'mi_css_personalizado');
+    add_action('wp_enqueue_style', 'mi_css_personalizado');
 function eysd_form1()
 {
     ob_start();
