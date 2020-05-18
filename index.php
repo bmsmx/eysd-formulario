@@ -9,7 +9,7 @@
 add_shortcode('eysd_form1','eysd_form1');
 function eysd_form1()
 {
-    wp_enqueue_style('css_aspirante', plugins_url('/eysd-formulario/style.css', __FILE__));
+    wp_enqueue_style('css_aspirante', plugins_url('/style.css', __FILE__));
     ob_start();
 
 ?>
