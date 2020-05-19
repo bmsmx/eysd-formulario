@@ -11,7 +11,7 @@ add_shortcode('eysd_form1','eysd_form1');
 
     function eysd_form1() 
 {
-    wp_enqueue_style('css_aspirante', 'https://encuentraysoluciona.digital/wp-content/plugins/eysd-formulario/style.css');
+    wp_enqueue_style('css_aspirante', 'https://encuentraysoluciona.digital/wp-content/plugins/style.css');
     ob_start();
 ?>
 
